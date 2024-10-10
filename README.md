@@ -1,2 +1,2 @@
 # PICO-8
-My PICO-8 games playable in the browser ❤️
+My PICO-8 creations playable in the browser ❤️

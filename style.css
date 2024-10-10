@@ -1,0 +1,25 @@
+body {
+	font-family: sans-serif;
+	height: 100vh;
+	margin: 16px;
+	background-color: #1d2b53 !important; 
+	overflow-y: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: white;
+	margin: 0;
+}
+
+a, li {
+	color: lime;
+	list-style-type: none;
+}
+
+ul {
+	padding-left: 30px;
+}
+
+#games, #p8_frame {
+	margin-top: 30px !important;
+}
