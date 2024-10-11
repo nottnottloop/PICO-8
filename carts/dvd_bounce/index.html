@@ -1,8 +1,6 @@
 ﻿<html><head>
 <title>PICO-8 Cartridge</title>
 <meta name="viewport" content="width=device-width, user-scalable=no">
-<link rel="stylesheet" href="../../style.css">
-<link rel="icon" href="../../favicon.ico">
 <script type="text/javascript">
 
 	// Default shell for PICO-8 0.2.2 (includes @weeble's gamepad mod 1.0)
@@ -984,8 +982,8 @@ canvas{
 
 .p8_start_button{
 	cursor:pointer;
-	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAABcklEQVR4Ae3dOW7DMBAF0NjIkVWoE9y58KFTBAgMLQxDMiQlvlcZia3lz3Cm/QAAAAAAAAAAgPJuPTzEMk85P388XwUvHr5acfcLNFEg4oTSLvOU2RDDFeA/Dla1GnQxgvJT2J0bq58HZsvRjSqMo/YF2L789rV3vxPOd/vf5BuNNYKKvHBM71detgPtgN15UnOvjlKA8MzprdOPfF4g+oStm7yNrnYCYiLLjDWyhE3S7/0E5AzuP8XXcEPczhVxTOfGr4cixRtlB8SHkhlf5aXd8gT82piRWbxfJ2aLNA+9oxFUtpANc0x2v0AB6OgQnM45RlB+vt1Op44K0LCLx13CR6E/nq/31br7+T24+D+GK12/Es2W8DJPgSCWeYrM4vs62y9v0/+5Y+DK4ae6VAEiJ8Oq5fPHSG/rutMRtOrc3dF0NFjONYIs4bGXcP2qNMwaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABo5AvdRrgYHD4U9wAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=");
-	-repeat: center;
+	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAABAklEQVR4Ae3dQQ7CIBAFUI/jPbz/ndwapHSmHaLJvJcujKWQ/N/C9gEAAAAAAAAAAAAAAEAjr+etq3ZyBVR2sKlUBYTy2vphKSZdwIWFmqYcHLN+6nR8fKFeBcRLWjw4vXV5IQXkCogMVkBBAak3XQGVBQRP6ZKTRvq5WFOnQvf0T3O58F4Hp8ou1KWA0ys4Q/kqCkjMcLNm6aezyJ4irUPfWiQKaNwBf3FW2+V/mbJ6ykIfdvbp78/g4n+umxb9JOt1AdMx0/SP7jatIb4tHH0ZQwGLiId/FBCtIVLA91S2IIewVmQNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHT1BgB4P89HlG+zAAAAEHRFWHRMb2RlUE5HADIwMTEwMjIx41m2wQAAAABJRU5ErkJggg==");
+	-repeat center;
 	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
 }
 
@@ -1009,20 +1007,15 @@ canvas{
 
 </head>
 
-<body>
+<body style="padding:0px; margin:0px; background-color:#222; color:#ccc">
 <div id="body_0"> <!-- hide this when playing in mobile (p8_touch_detected) so that elements don't affect layout -->
 
-<img style="float:right;" src="dvd_bounce.p8.png">
-<h1>DVD Bounce</h1>
-<p>So peaceful, so serene</p>
-<a href="dvd_bounce.zip">Download</a>
-<a href="../../index.html">Go back</a><br>
 
 <!-- Add any content above the cart here -->
 
 
 <div id="p8_frame_0" style="max-width:800px; max-height:800px; margin:auto;"> <!-- double function: limit size, and display only this div for touch devices -->
-<div id="p8_frame" style="width:100%; max-width:95vw; height:100vw; max-height:95vh; margin:auto;">
+<div id="p8_frame" style="display:flex; width:100%; max-width:95vw; height:100vw; max-height:95vh; margin:auto;">
 
 	<div id="p8_menu_buttons_touch" style="position:absolute; width:100%; z-index:10; left:0px;">
 		<div class="p8_menu_button" id="p8b_full"  style="float:left;margin-left:10px" onClick="p8_give_focus(); p8_request_fullscreen();"></div>

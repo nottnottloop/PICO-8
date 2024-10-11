@@ -15,8 +15,9 @@ a, li {
 	list-style-type: none;
 }
 
-ul {
+ul, dl {
 	padding-left: 30px;
+	color: white;
 }
 
 #games, #p8_frame {

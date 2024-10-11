@@ -1,8 +1,6 @@
 ﻿<html><head>
-<title>Circle Test</title>
+<title>PICO-8 Cartridge</title>
 <meta name="viewport" content="width=device-width, user-scalable=no">
-<link rel="stylesheet" href="../../style.css">
-<link rel="icon" href="../../favicon.ico">
 <script type="text/javascript">
 
 	// Default shell for PICO-8 0.2.2 (includes @weeble's gamepad mod 1.0)
@@ -985,7 +983,7 @@ canvas{
 .p8_start_button{
 	cursor:pointer;
 	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAACOUlEQVR4Ae3dTW6zMBQF0DSL+ZaT9WTWadaTFX4DKoT4C4FgX8K5qipUGeS+8549/fm9/Lvcb5fH8+93k5nnbnprRr/TLpt5t7umt7j54HD91B4WPvc+Ui/X/h/anTUPw9/DxfN/byr41pq2TG31l++hu2DmuSWJA9iys6l3H8/Xnx1ds6JPux+Zek7Ktb+5LbM5+u5o+69Ys2IPvanKBZhppXWN0323ae3h/79kzZaxO0iuf20yeuIv6aCpO6P7zZnJGK6ZOuuXTNjUjbXkPoubAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAA+VaAx3PyB0CJom9fBuDt0pd8EcAnKxjPkArw2aoFG+QB7NSzqaMQBrB3jfIMkgDKVCfMIAagZF2SDDIAylckxiDvEj5ZAgBqNWPGENQGqFuFAANH0JkBEg6B2nswAaedgIw7sPpOTIBLGICcDyDnAqi9HxPgCAIgAAAIAAACAECh3G9ZZai3HxPgCAIgpwTIuQaq7sQEnPkIShiC2nswASe/hOs2YMAIBkxArSokHICOIACVmjGj/ZMmoGRFYqofdgSVqUtS9fPugL2rE1b9yEv4ftulTDt99gsB9mjVyNJnA3yqZ1Mb/wgAGysYX/qDAHSr+bKmC5cB+BhG7+eAOSDAdwUAAAACAIAAACAAAAgAAAIAgAAAIAAACAAAAgCAAAAgAAAIAAACAIAAACAAAAgAAAIAgAA4Zv4DbY3h/zvbiRQAAAAQdEVYdExvZGVQTkcAMjAxMTAyMjHjWbbBAAAAAElFTkSuQmCC");
-	-repeat: center;
+	-repeat center;
 	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
 }
 
@@ -1009,19 +1007,15 @@ canvas{
 
 </head>
 
-<body>
+<body style="padding:0px; margin:0px; background-color:#222; color:#ccc">
 <div id="body_0"> <!-- hide this when playing in mobile (p8_touch_detected) so that elements don't affect layout -->
 
-<h1>Circle Test</h1>
-<p>Move a circle around</p>
-<a href="circle_test.zip">Download</a>
-<a href="../../index.html">Go back</a>
 
 <!-- Add any content above the cart here -->
 
 
 <div id="p8_frame_0" style="max-width:800px; max-height:800px; margin:auto;"> <!-- double function: limit size, and display only this div for touch devices -->
-<div id="p8_frame" style="width:100%; max-width:95vw; height:100vw; max-height:95vh; margin:auto;">
+<div id="p8_frame" style="display:flex; width:100%; max-width:95vw; height:100vw; max-height:95vh; margin:auto;">
 
 	<div id="p8_menu_buttons_touch" style="position:absolute; width:100%; z-index:10; left:0px;">
 		<div class="p8_menu_button" id="p8b_full"  style="float:left;margin-left:10px" onClick="p8_give_focus(); p8_request_fullscreen();"></div>

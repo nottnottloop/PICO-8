@@ -1,8 +1,6 @@
 ﻿<html><head>
-<title>Input Test</title>
+<title>PICO-8 Cartridge</title>
 <meta name="viewport" content="width=device-width, user-scalable=no">
-<link rel="stylesheet" href="../../style.css">
-<link rel="icon" href="../../favicon.ico">
 <script type="text/javascript">
 
 	// Default shell for PICO-8 0.2.2 (includes @weeble's gamepad mod 1.0)
@@ -985,7 +983,7 @@ canvas{
 .p8_start_button{
 	cursor:pointer;
 	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAArElEQVR4Ae3dzwmDMBQH4DRrZALH8eAA0kGkg0hG6IoeAhLF/pVSbL+PIM+Qg74fL+fQ9+eyQljU82sp6md9hr3q5m4Wd86wXywNzXl8Jic+EkDO463+zvsPE+L9AFw1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA7uiZ1TTril0fhfdfp6D8wtOudy9UE8G+GdmMUTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC8bALguilYGLPMXwAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=");
-	-repeat: center;
+	-repeat center;
 	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
 }
 
@@ -1009,19 +1007,15 @@ canvas{
 
 </head>
 
-<body>
+<body style="padding:0px; margin:0px; background-color:#222; color:#ccc">
 <div id="body_0"> <!-- hide this when playing in mobile (p8_touch_detected) so that elements don't affect layout -->
 
-<h1>Input Test</h1>
-<p>It's an input test</p>
-<a href="input_test.zip">Download</a>
-<a href="../../index.html">Go back</a>
 
 <!-- Add any content above the cart here -->
 
 
 <div id="p8_frame_0" style="max-width:800px; max-height:800px; margin:auto;"> <!-- double function: limit size, and display only this div for touch devices -->
-<div id="p8_frame" style="width:100%; max-width:95vw; height:100vw; max-height:95vh; margin:auto;">
+<div id="p8_frame" style="display:flex; width:100%; max-width:95vw; height:100vw; max-height:95vh; margin:auto;">
 
 	<div id="p8_menu_buttons_touch" style="position:absolute; width:100%; z-index:10; left:0px;">
 		<div class="p8_menu_button" id="p8b_full"  style="float:left;margin-left:10px" onClick="p8_give_focus(); p8_request_fullscreen();"></div>
